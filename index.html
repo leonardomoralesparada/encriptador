@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  rel="stylesheet" href="styles/styles.css">
+    <title>encriptador de texto</title>
+</head>
+<body>
+    <header class="header">
+        <img src="assets/alura.png" alt="imagen de alura latam" class="header__logo">
+    </header>
+    <main class="main">
+        <section class="main__section--encriptador">
+            <textarea id="inputText" class="encriptador__textarea--encriptar" placeholder="Ingrese el texto aquí"></textarea>
+            <div class="encriptador__mensaje">
+                <img src="assets/exclamacion.png" alt="imagen de alerta" class="encriptador__alert-img">
+                <p class="encriptador__alert-text">solo letras minisculas y sin acentos</p>
+            </div>
+            <div class="encriptador__buttons">
+                <button onclick="obtenerText()"; class="main__buttons encriptador__button--encriptar">Encriptar</button>
+                <button onclick="obtener()"; class="main__buttons encriptador__button--desencriptar">Desencriptar</button>
+            </div>
+        </section>
+        <section class="main__section--resultado">
+            <textarea  id="outputText" class="resultado__textarea--desencriptar"></textarea>
+            <button onclick="copiarTexto()" class="main__buttons resultado__button--copiar">Copiar</button>
+        </section>
+    </main>
+    <footer class="footer">
+        <p class="footer__informacion">Desarrollado por Leonardo Morales</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
